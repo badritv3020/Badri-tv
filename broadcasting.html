@@ -1,41 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Broadcasting - Badri TV</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Badri TV & Production</title>
+
 <style>
-body {font-family:Arial; background:#f4f4f4; text-align:center;}
-h1 {color:red;}
-a {display:inline-block; margin-top:20px;}
+body{
+    margin:0;
+    font-family:Arial;
+    background:#000;
+    color:#fff;
+}
+
+/* NAVBAR */
+nav{
+    background:rgba(0,0,0,0.8);
+    padding:15px;
+    text-align:center;
+    position:fixed;
+    width:100%;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32') center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.hero h1{
+    font-size:35px;
+}
+
+/* SECTION */
+section{
+    padding:80px 20px;
+    text-align:center;
+}
+
+/* SERVICE BOX */
+.box{
+    margin:20px 0;
+    padding:20px;
+    border:1px solid #333;
+    border-radius:10px;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    margin:10px;
+    padding:10px 20px;
+    background:#25D366;
+    color:#fff;
+    text-decoration:none;
+    border-radius:20px;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+}
+.whatsapp img{width:60px;}
 </style>
 </head>
 
 <body>
 
-<h1>📡 Live Broadcasting Services</h1>
+<nav>
+<h2>Badri TV & Production</h2>
+</nav>
 
-<p>🎥 भागवत कथा लाइव</p>
-<p>🎤 भजन संध्या लाइव</p>
-<p>🙏 जागरण लाइव</p>
-<p>🎬 स्टेज शो लाइव</p>
-<p>💍 वेडिंग लाइव</p>
+<section class="hero">
+<h1>Professional Photography & Live Production</h1>
+</section>
 
-<h2>💰 Pricing</h2>
+<!-- SERVICES -->
+<section>
+<h2>🔥 Our Services</h2>
 
-<p>📿 भागवत कथा: ₹21,999</p>
-<p>✔ 2 Camera Setup</p>
-<p>✔ 500+ Photos</p>
-<p>✔ Pen Drive</p>
-<p>✔ Short Video Editing</p>
+<div class="box">
+<h3>🎤 Digital Sound System</h3>
+<p>Live sound setup, DJ system, event sound management</p>
+</div>
+
+<div class="box">
+<h3>📺 Live Broadcasting</h3>
+<p>Live telecast, multi-camera setup, live streaming</p>
+</div>
+
+<div class="box">
+<h3>💍 Wedding Shoot</h3>
+<p>Full wedding coverage, traditional & modern shoots</p>
+</div>
+
+<div class="box">
+<h3>📸 Photography</h3>
+<p>Candid photography, event photography, professional shoots</p>
+</div>
+
+<div class="box">
+<h3>🎬 Cinematography</h3>
+<p>Cinematic video, storytelling shoots, reels & highlights</p>
+</div>
+
+<div class="box">
+<h3>🚁 Drone Shoot</h3>
+<p>Drone photography & videography (aerial view)</p>
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section>
+<h2>📞 Contact Us</h2>
+
+<p>📞 7017553020</p>
+<p>📞 7409719741</p>
+
+<a class="btn" href="tel:7017553020">Call Now</a>
+<a class="btn" href="tel:7409719741">Call Now</a>
 
 <br>
 
-<p>🎤 भजन संध्या / जागरण: ₹8,999</p>
-<p>✔ 2 Camera Setup</p>
-<p>✔ 100+ Photos</p>
+<a class="btn" href="https://wa.me/917017553020">WhatsApp</a>
+<a class="btn" href="https://wa.me/917409719741">WhatsApp</a>
 
-<br>
+</section>
 
-<a href="index.html">⬅️ Back to Home</a>
+<!-- FLOAT BUTTON -->
+<div class="whatsapp">
+<a href="https://wa.me/917017553020">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+</a>
+</div>
 
 </body>
 </html>
