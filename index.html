@@ -3,167 +3,142 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Badri Photography</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<title>Badri TV & Photography</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{margin:0;font-family:Arial;background:#000;color:#fff;}
+nav{background:#000;padding:15px;text-align:center;position:fixed;width:100%;}
+section{padding:80px 20px;text-align:center;}
+h2{margin-bottom:20px;}
 
-body{
-    background:#000;
-    color:white;
-    scroll-behavior:smooth;
-}
-
-/* NAVBAR */
-nav{
-    position:fixed;
-    width:100%;
-    background:rgba(0,0,0,0.7);
-    padding:15px;
-    text-align:center;
-    z-index:1000;
-}
-
-/* HERO */
 .hero{
-    height:100vh;
-    background:url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32') center/cover;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+height:100vh;
+background:url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32') center/cover;
+display:flex;justify-content:center;align-items:center;
 }
-.hero h1{
-    font-size:50px;
-    animation:fade 2s;
-}
+.hero h1{font-size:35px;}
 
-/* GALLERY */
 .gallery{
-    padding:80px 20px;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:15px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:10px;
 }
-.gallery img{
-    width:100%;
-    border-radius:15px;
-    cursor:pointer;
-    transition:0.4s;
-}
-.gallery img:hover{
-    transform:scale(1.1);
-}
+.gallery img{width:100%;border-radius:10px;}
 
-/* LIGHTBOX */
-.lightbox{
-    position:fixed;
-    top:0;left:0;
-    width:100%;height:100%;
-    background:rgba(0,0,0,0.9);
-    display:none;
-    justify-content:center;
-    align-items:center;
-}
-.lightbox img{
-    width:90%;
-    max-width:600px;
-}
-
-/* CONTACT */
-.contact{
-    padding:40px;
-    text-align:center;
-    background:#111;
-}
 .btn{
-    display:inline-block;
-    margin:10px;
-    padding:12px 20px;
-    border-radius:30px;
-    text-decoration:none;
-    color:white;
-    background:#25D366;
+display:inline-block;
+margin:10px;
+padding:10px 20px;
+background:#25D366;
+color:#fff;
+text-decoration:none;
+border-radius:20px;
 }
 
-/* FLOAT WHATSAPP */
+/* WhatsApp */
 .whatsapp{
-    position:fixed;
-    bottom:20px;
-    right:20px;
+position:fixed;
+bottom:20px;
+right:20px;
 }
 .whatsapp img{width:60px;}
-
-@keyframes fade{
-    from{opacity:0;}
-    to{opacity:1;}
-}
 </style>
 </head>
 
 <body>
 
 <nav>
-<h2>Badri Photography</h2>
+<h2>Badri TV & Photography</h2>
 </nav>
 
 <section class="hero">
-<h1>Capture Your Moments</h1>
+<h1>Capture & Broadcast Your Moments</h1>
 </section>
 
-<section class="gallery">
-<img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d" onclick="openImg(this.src)">
-<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" onclick="openImg(this.src)">
-<img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308" onclick="openImg(this.src)">
-<img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde" onclick="openImg(this.src)">
-</section>
-
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox" onclick="closeImg()">
-<img id="lightbox-img">
+<!-- PHOTOGRAPHY -->
+<section>
+<h2>📸 Photography</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d">
+<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
 </div>
+</section>
 
-<section class="contact">
+<!-- WEDDING -->
+<section>
+<h2>💍 Wedding</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+<img src="https://images.unsplash.com/photo-1529634899784-ccfbff2a24d4">
+</div>
+</section>
+
+<!-- SOUND -->
+<section>
+<h2>🎤 Sound System</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2">
+<img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc">
+</div>
+</section>
+
+<!-- BROADCAST -->
+<section>
+<h2>📺 Broadcasting</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+</div>
+</section>
+
+<!-- BADRI TV -->
+<section>
+<h2>📡 Badri TV Live</h2>
+<p>Live Event Coverage & Streaming Service Available</p>
+</section>
+
+<!-- PRICE -->
+<section>
+<h2>💰 Price List</h2>
+<p>Photography: ₹5000+</p>
+<p>Wedding Package: ₹20000+</p>
+<p>Sound System: ₹3000+</p>
+<p>Broadcasting: ₹7000+</p>
+</section>
+
+<!-- CONTACT -->
+<section>
 <h2>Contact Us</h2>
 
 <p>📞 7017553020</p>
 <p>📞 7409719741</p>
 
-<a class="btn" href="tel:7017553020">📞 Call 1</a>
-<a class="btn" href="tel:7409719741">📞 Call 2</a>
+<a class="btn" href="tel:7017553020">Call 1</a>
+<a class="btn" href="tel:7409719741">Call 2</a>
 
 <br>
 
-<a class="btn" href="https://wa.me/917017553020?text=Hello%20I%20want%20photography" target="_blank">💬 WhatsApp 1</a>
-<a class="btn" href="https://wa.me/917409719741?text=Hello%20I%20want%20photography" target="_blank">💬 WhatsApp 2</a>
+<a class="btn" href="https://wa.me/917017553020">WhatsApp 1</a>
+<a class="btn" href="https://wa.me/917409719741">WhatsApp 2</a>
 
-<h3 id="location">📍 Getting location...</h3>
-<a id="mapLink" class="btn" target="_blank">📍 Open Map</a>
+<h3 id="loc">📍 Getting location...</h3>
+<a id="map" class="btn" target="_blank">Open Map</a>
 
 </section>
 
 <!-- FLOAT WHATSAPP -->
 <div class="whatsapp">
-<a href="https://wa.me/917017553020" target="_blank">
+<a href="https://wa.me/917017553020">
 <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
 </a>
 </div>
 
 <script>
-function openImg(src){
-    document.getElementById("lightbox").style.display="flex";
-    document.getElementById("lightbox-img").src=src;
-}
-function closeImg(){
-    document.getElementById("lightbox").style.display="none";
-}
-
-navigator.geolocation.getCurrentPosition(function(pos){
-    let lat=pos.coords.latitude;
-    let lon=pos.coords.longitude;
-    document.getElementById("location").innerHTML="📍 "+lat+", "+lon;
-    document.getElementById("mapLink").href="https://maps.google.com?q="+lat+","+lon;
+navigator.geolocation.getCurrentPosition(function(p){
+let lat=p.coords.latitude;
+let lon=p.coords.longitude;
+document.getElementById("loc").innerHTML="📍 "+lat+","+lon;
+document.getElementById("map").href="https://maps.google.com?q="+lat+","+lon;
 });
 </script>
 
